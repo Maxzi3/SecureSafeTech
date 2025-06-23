@@ -24,7 +24,7 @@ const Footer = () => {
               Protecting businesses from cyber threats with cutting-edge
               security solutions, expert training, and 24/7 monitoring services.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 gap-2 flex-col md:flex-row">
               <div className="flex items-center space-x-2 text-gray-300">
                 <Mail className="h-4 w-4" />
                 <span className="text-sm">contact@securesafetech.com</span>

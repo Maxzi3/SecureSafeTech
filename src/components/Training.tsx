@@ -26,7 +26,7 @@ const Training = () => {
       title: "Cybersecurity Fundamentals",
       description:
         "Learn the essential principles of cybersecurity, including threat landscape, risk management, and basic security controls.",
-      duration: "6 weeks",
+      duration: "6 Months",
       level: "Beginner",
       category: "Certification",
     },
@@ -163,7 +163,7 @@ const Training = () => {
             <div className="flex justify-center mb-4">
               <Users className="h-12 w-12 text-cyan-400" />
             </div>
-            <div className="text-3xl font-bold  mb-2">10,000+</div>
+            <div className="text-3xl font-bold  mb-2">100+</div>
             <div className="">Professionals Trained</div>
           </div>
           <div className="text-center">
@@ -177,7 +177,7 @@ const Training = () => {
             <div className="flex justify-center mb-4">
               <BookOpen className="h-12 w-12 text-cyan-400" />
             </div>
-            <div className="text-3xl font-bold  mb-2">50+</div>
+            <div className="text-3xl font-bold  mb-2">20+</div>
             <div className="">Training Modules</div>
           </div>
         </div>

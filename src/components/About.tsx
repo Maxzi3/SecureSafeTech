@@ -5,8 +5,8 @@ import { CheckCircle, Target, Eye, Users } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { number: "15+", label: "Years of Experience" },
-    { number: "500+", label: "Clients Protected" },
+    { number: "2", label: "Years of Experience" },
+    { number: "50+", label: "Clients Protected" },
     { number: "99.9%", label: "Uptime Guarantee" },
     { number: "24/7", label: "Support Available" },
   ];
