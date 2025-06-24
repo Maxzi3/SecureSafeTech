@@ -231,7 +231,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className=" font-semibold">Email</div>
-                    <div>contact@securesafetech.com</div>
+                    <div>SecureSafeTech@outlook.com</div>
                   </div>
                 </div>
 
@@ -261,13 +261,13 @@ const Contact = () => {
                   <h1>Follow Us</h1>
                   <div className="flex flex-row gap-4 py-4">
                     <a
-                      href="#"
+                      href="https://www.linkedin.com/company/secure-safe-tech/"
                       className="bg-gradient-to-r text-white from-cyan-500 to-blue-600 rounded-full p-3"
                     >
                       <FaLinkedin />
                     </a>
                     <a
-                      href="#"
+                      href="https://x.com/Securesafe8822"
                       className="bg-gradient-to-r text-white from-cyan-500 to-blue-600 rounded-full p-3"
                     >
                       <BsTwitterX />

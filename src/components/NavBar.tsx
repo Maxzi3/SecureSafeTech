@@ -1,7 +1,8 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Shield } from "lucide-react";
+import { Menu, X} from "lucide-react";
 import DarkModeToggle from "./DarkMode";
 
 const NavBar = () => {
@@ -20,9 +21,22 @@ const NavBar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <Shield className="h-8 w-8" />
-            <span className="text-xl font-bold ">SecureSafeTech</span>
+          <div>
+            <Image
+              src="/Logo.png"
+              alt="logo"
+              width={150}
+              height={300}
+              className="block dark:hidden p-2"
+            />
+
+            <Image
+              src="/LogoDark.png"
+              alt="logo"
+              width={150}
+              height={300}
+              className="hidden dark:block p-2"
+            />
           </div>
 
           {/* Desktop Navigation */}
@@ -58,7 +72,6 @@ const NavBar = () => {
               Contact
             </button>
 
-            
             <Button
               onClick={() => scrollToSection("contact")}
               className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-semibold px-6 py-2 rounded-lg transition-all duration-300 shadow-lg hover:shadow-cyan-500/25"
@@ -117,7 +130,7 @@ const NavBar = () => {
               >
                 Contact
               </button>
-              
+
               <div className="px-3 py-2 flex flex-row gap-3">
                 <Button
                   onClick={() => scrollToSection("contact")}

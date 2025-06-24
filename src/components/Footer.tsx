@@ -1,5 +1,6 @@
 "use client";
-import { Shield, Mail, Phone } from "lucide-react";
+import Image from "next/image";
+import {  Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
@@ -14,11 +15,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <Shield className="h-8 w-8 text-cyan-400" />
-              <span className="text-xl font-bold text-white">
-                securesafetech
-              </span>
+            <div className="flex items-center space-x-2">
+                <Image
+                  src="/LogoDark.png"
+                  alt="logo"
+                  width={150}
+                  height={300}
+                />
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
               Protecting businesses from cyber threats with cutting-edge
@@ -27,7 +30,7 @@ const Footer = () => {
             <div className="flex space-x-4 gap-2 flex-col md:flex-row">
               <div className="flex items-center space-x-2 text-gray-300">
                 <Mail className="h-4 w-4" />
-                <span className="text-sm">contact@securesafetech.com</span>
+                <span className="text-sm">SecureSafeTech@outlook.com</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-300">
                 <Phone className="h-4 w-4" />
@@ -118,8 +121,8 @@ const Footer = () => {
 
         <div className="border-t border-slate-700 mt-8 pt-8 text-center">
           <p className="text-gray-300">
-            © 2025 securesafetech. All rights reserved. | Privacy Policy | Terms
-            of Service
+            © 2025 securesafetech. All rights reserved. | Privacy Policy |
+            Terms of Service
           </p>
         </div>
       </div>

@@ -59,18 +59,20 @@ const Hero = () => {
           </div>
 
           {/* Feature highlights */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="flex items-center justify-center space-x-3 text-gray-500">
-              <Shield className="h-8 w-8 text-cyan-400" />
-              <span className="text-lg">Advanced Threat Protection</span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="flex items-center justify-center text-gray-500 whitespace-nowrap">
+              <Shield className="h-8 w-9 text-cyan-400" />
+              <span className="text-sm md:text-lg">
+                Advanced Threat Protection
+              </span>
             </div>
-            <div className="flex items-center justify-center space-x-3 text-gray-500">
+            <div className="flex items-center justify-center space-x-3 text-gray-500 whitespace-nowrap">
               <Lock className="h-8 w-8 text-cyan-400" />
-              <span className="text-lg">Zero-Trust Security</span>
+              <span className="text-sm md:text-lg">Zero-Trust Security</span>
             </div>
-            <div className="flex items-center justify-center space-x-3 text-gray-500">
+            <div className="flex items-center justify-center space-x-3 text-gray-500 whitespace-nowrap">
               <Eye className="h-8 w-8 text-cyan-400" />
-              <span className="text-lg">24/7 Monitoring</span>
+              <span className="text-sm md:text-lg">24/7 Monitoring</span>
             </div>
           </div>
         </div>

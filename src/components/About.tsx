@@ -5,7 +5,7 @@ import { CheckCircle, Target, Eye, Users } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { number: "2", label: "Years of Experience" },
+    { number: "3+", label: "Years of Experience" },
     { number: "50+", label: "Clients Protected" },
     { number: "99.9%", label: "Uptime Guarantee" },
     { number: "24/7", label: "Support Available" },
@@ -58,11 +58,11 @@ const About = () => {
             <div className="space-y-4 mb-8">
               <div className="flex items-center space-x-3">
                 <CheckCircle className="h-6 w-6 text-cyan-400 flex-shrink-0" />
-                <span>ISO 27001 Certified Security Management</span>
+                <span>Certified Pentration Testers</span>
               </div>
               <div className="flex items-center space-x-3">
                 <CheckCircle className="h-6 w-6 text-cyan-400 flex-shrink-0" />
-                <span>CISSP and CISM Certified Professionals</span>
+                <span>ISMS Certified Professionals</span>
               </div>
               <div className="flex items-center space-x-3">
                 <CheckCircle className="h-6 w-6 text-cyan-400 flex-shrink-0" />

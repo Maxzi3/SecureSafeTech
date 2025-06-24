@@ -11,7 +11,6 @@ import {
 import {
   GraduationCap,
   Users,
-  Award,
   BookOpen,
   Clock,
   Globe,
@@ -158,7 +157,7 @@ const Training = () => {
         </div>
 
         {/* Training Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:flex md:flex-row md:justify-center gap-8 mb-16">
           <div className="text-center">
             <div className="flex justify-center mb-4">
               <Users className="h-12 w-12 text-cyan-400" />
@@ -167,11 +166,11 @@ const Training = () => {
             <div className="">Professionals Trained</div>
           </div>
           <div className="text-center">
-            <div className="flex justify-center mb-4">
+            {/* <div className="flex justify-center mb-4">
               <Award className="h-12 w-12 text-cyan-400" />
             </div>
             <div className="text-3xl font-bold mb-2">95%</div>
-            <div className="">Certification Pass Rate</div>
+            <div className="">Certification Pass Rate</div> */}
           </div>
           <div className="text-center">
             <div className="flex justify-center mb-4">
