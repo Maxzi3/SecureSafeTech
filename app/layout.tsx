@@ -14,8 +14,27 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "SecureSafeTech",
-  description: "Pathway to safer Tommorow",
+  description: "Pathway to a Safer Tomorrow",
+  openGraph: {
+    title: "SecureSafeTech",
+    description: "Pathway to a Safer Tomorrow",
+    images: [
+      {
+        url: "/companyLogo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "SecureSafeTech Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SecureSafeTech",
+    description: "Pathway to a Safer Tomorrow",
+    images: ["/companyLogo.jpg"],
+  },
 };
+
 
 export default function RootLayout({
   children,
