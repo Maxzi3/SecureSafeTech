@@ -147,7 +147,7 @@ const Training = () => {
             </div>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold  mb-4">
-            Cybersecurity Training & Certification
+            Cybersecurity Training & Services
           </h2>
           <p className="text-xl max-w-3xl mx-auto mb-8">
             Empower your team with the knowledge and skills to defend against

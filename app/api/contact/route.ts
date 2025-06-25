@@ -1,11 +1,8 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
+import nodemailer from "nodemailer";
 
 export async function POST(req: Request) {
-  const body = await req.json();
-  const { name, email, message, company, service } = body;
+  const { name, email, message, company, service } = await req.json();
 
   if (!name || !email || !message || !company || !service) {
     return NextResponse.json(
@@ -15,10 +12,24 @@ export async function POST(req: Request) {
   }
 
   try {
-    await resend.emails.send({
-      from: "SecureSafeTech <onboarding@resend.dev>", // You can change this after domain setup
-      to: ["SecureSafeTech@outlook.com"], // where the message should be sent
-      subject: `New Contact Form Message from ${name}`,
+    const transporter = nodemailer.createTransport({
+      host: "smtp.office365.com",
+      port: 587,
+      secure: false,
+      auth: {
+        user: process.env.OUTLOOK_USER,
+        pass: process.env.OUTLOOK_PASS,
+      },
+      tls: {
+        ciphers: "SSLv3",
+      },
+    });
+
+   const res=  await transporter.sendMail({
+      from: `"${company}" <${process.env.OUTLOOK_USER}>`,
+      to: process.env.OUTLOOK_USER,
+      replyTo: email,
+      subject: `New Message from ${name} for ${service}`,
       html: `
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
@@ -27,12 +38,12 @@ export async function POST(req: Request) {
         <p><strong>Message:</strong><br />${message}</p>
       `,
     });
-
-    return NextResponse.json({ success: true });
+console.log("Email sent successfully:", res);
+    return NextResponse.json({ message: "Message sent successfully!" });
   } catch (error) {
-    console.error("Resend Error:", error);
+    console.error("Error sending email:", error);
     return NextResponse.json(
-      { error: "Email failed to send" },
+      { error: "Failed to send message" },
       { status: 500 }
     );
   }

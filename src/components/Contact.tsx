@@ -242,7 +242,7 @@ const Contact = () => {
                   <div>
                     <div className=" font-semibold">Address</div>
                     <div className="">
-                      123 Security Blvd, Cyber City, CC 12345
+                      Uyo, Nigeria
                     </div>
                   </div>
                 </div>
