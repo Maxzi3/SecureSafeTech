@@ -144,6 +144,7 @@ const Contact = () => {
                     </label>
                     <Controller
                       control={control}
+                      defaultValue=""
                       name="service"
                       render={({ field }) => (
                         <Select
@@ -241,9 +242,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className=" font-semibold">Address</div>
-                    <div className="">
-                      Uyo, Nigeria
-                    </div>
+                    <div className="">Uyo, Nigeria</div>
                   </div>
                 </div>
 

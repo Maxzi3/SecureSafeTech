@@ -16,12 +16,13 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2">
-                <Image
-                  src="/LogoDark.png"
-                  alt="logo"
-                  width={150}
-                  height={300}
-                />
+              <Image
+                src="/LogoDark.png"
+                alt="logo"
+                width={150}
+                height={300}
+                style={{ height: "auto" }}
+              />
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
               Protecting businesses from cyber threats with cutting-edge
@@ -121,8 +122,8 @@ const Footer = () => {
 
         <div className="border-t border-slate-700 mt-8 pt-8 text-center">
           <p className="text-gray-300">
-            © 2025 securesafetech. All rights reserved. | Privacy Policy |
-            Terms of Service
+            © 2025 securesafetech. All rights reserved. | Privacy Policy | Terms
+            of Service
           </p>
         </div>
       </div>
